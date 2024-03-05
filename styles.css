@@ -1,0 +1,108 @@
+body{
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 0;
+    margin: 0;
+}
+
+#header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    background-color:black;
+    width: 100vw;
+    position: relative;
+    overflow: hidden; 
+}
+
+#logo_title{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+}
+
+#logo img{
+    max-width: 80px;
+    height: auto;
+    margin-right: 15px;
+    margin-left: 10px;
+}
+
+#profile{
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+#profile img{
+    max-width: 45px;
+    height: auto;
+    margin-right: 25px;
+    margin-left: 10px;
+}
+
+#title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+
+
+#title h1 {
+    color: white; /* Sets the base color to white */
+    font-family: Arial, Helvetica, sans-serif; /* Sets the font family */
+    text-align: center;
+    padding: 0px; /* Centers the title */
+}
+
+#search_bar{
+    display: flex;
+    flex-grow: 1;
+    background: transparent;
+    max-width: 700px;
+    /* padding: 0 20px; */
+}
+
+#search {
+    width: 100%; /* Ensures the search input takes up all the space in the search bar */
+    padding: 8px; /* Adds some padding inside the search input */
+    background: transparent;
+    border: 2px solid rgb(239, 153, 3); /* Adds a border to the search input */
+    color: white; 
+    outline: none; 
+    border-radius: 50px;
+}
+
+#search:hover {
+    box-shadow: 0 0 8px 2px rgba(240, 143, 8, 0.819); /* This creates a white glow */
+}
+
+/* Optional: Add the same glow effect when the input is focused */
+#search:focus {
+    box-shadow: 0 0 8px 2px rgba(240, 143, 8, 0.819); /* This creates a white glow */
+}
+
+#content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding-top: 70px; /* Adjust as needed */
+}
+
+.rss-box {
+    display: flex;
+    justify-content: center;
+    border: 1px solid orange; /* Sets a solid orange border */
+    box-shadow: 0 0 15px orange; /* Creates a glowing effect */
+}
+
