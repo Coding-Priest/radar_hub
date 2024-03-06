@@ -8,7 +8,7 @@ function displayRSSItem($feedurl, $itemIndex){
     $link = $rss->channel->item[intval($itemIndex)]->link;
 
     $output = "<div class = 'rss-box'>";
-    $output .= "<h2><a href='$link' class = 'news_link'>$title</a></h2>";
+    $output .= "<h2><a href='$link' target = '_blank' class = 'news_link'>$title</a></h2>";
     $output .= "</div>";
 
     return $output;
