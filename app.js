@@ -9,6 +9,10 @@ $(document).ready(
             { url: "https://hackernoon.com/feed", itemIndex: 5 },
             { url: "https://hackernoon.com/feed", itemIndex: 6 },
             { url: "https://hackernoon.com/feed", itemIndex: 7 },
+            { url: "https://hackernoon.com/feed", itemIndex: 8 },
+            { url: "https://hackernoon.com/feed", itemIndex: 9 },
+            { url: "https://hackernoon.com/feed", itemIndex: 10 },
+            { url: "https://hackernoon.com/feed", itemIndex: 11 },
         ];
 
         feeds.forEach(
