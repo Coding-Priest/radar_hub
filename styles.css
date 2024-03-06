@@ -1,9 +1,12 @@
 body{
-    background-color: black;
+    /* background-color: rgb(29, 28, 28); */
+    background-color:black;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     padding: 0;
     margin: 0;
+    overflow-x: hidden;
+
 }
 
 #header{
@@ -12,7 +15,8 @@ body{
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    background-color:black;
+    /* background-color:black; */
+    background-color: rgb(29, 28, 28);
     width: 100vw;
     position: relative;
     overflow: hidden; 
@@ -96,13 +100,33 @@ body{
 #content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     padding-top: 70px; /* Adjust as needed */
+    gap: 50px 30px;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 
 .rss-box {
     display: flex;
     justify-content: center;
-    border: 1px solid orange; /* Sets a solid orange border */
-    box-shadow: 0 0 15px orange; /* Creates a glowing effect */
+    border: 1px solid rgb(247, 249, 250); /* Sets a solid orange border */
+    box-shadow: 0 0 15px rgb(240, 144, 18); /* Creates a glowing effect */
+    min-height: 200px; /* Sets the minimum height of the box */
+    border-radius: 22px;
+    padding: 20px;
+}
+
+.news_link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration:dashed;
+    color: white;
+}
+
+.news_link:hover{
+    color: rgb(240, 144, 18);
+    text-decoration: underline;
 }
 
