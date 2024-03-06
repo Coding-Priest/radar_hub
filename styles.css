@@ -155,6 +155,11 @@ body{
     color: rgb(241, 241, 241); /* Initial color for unfilled heart */
 }
 
+.heart-button i:hover{
+    color: red; /* Color when hovered */
+
+}
+
 .heart-button.liked i {
     color: red; /* Color when liked */
 }
