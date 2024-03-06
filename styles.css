@@ -102,7 +102,7 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     padding-top: 70px; /* Adjust as needed */
-    gap: 50px 30px;
+    gap: 40px 30px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -115,6 +115,7 @@ body{
     min-height: 200px; /* Sets the minimum height of the box */
     border-radius: 22px;
     padding: 20px;
+    position: relative;
 }
 
 .news_link{
@@ -128,6 +129,34 @@ body{
 .news_link:hover{
     color: rgb(240, 144, 18);
     text-decoration: underline;
+}
+
+.rss_title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+
+}
+
+.heart-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.heart-button i {
+    color: rgb(241, 241, 241); /* Initial color for unfilled heart */
+}
+
+.heart-button.liked i {
+    color: red; /* Color when liked */
 }
 
 /* .news_link:visited{
