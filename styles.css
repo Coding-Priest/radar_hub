@@ -1,6 +1,6 @@
 body{
     /* background-color: rgb(29, 28, 28); */
-    background-color:black;
+    background-color:rgba(14,17,23,255);
     font-family: Arial, Helvetica, sans-serif;
     color: white;
     padding: 0;
@@ -16,7 +16,7 @@ body{
     align-items: center;
     position: fixed;
     /* background-color:black; */
-    background-color: rgb(29, 28, 28);
+    background-color: rgb(15, 14, 14);
     width: 100vw;
     position: relative;
     overflow: hidden; 
@@ -101,7 +101,7 @@ body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding-top: 70px; /* Adjust as needed */
+    padding-top: 70px; 
     gap: 40px 30px;
     padding-left: 30px;
     padding-right: 30px;
@@ -110,26 +110,57 @@ body{
 .rss-box {
     display: flex;
     justify-content: center;
-    border: 1px solid rgb(247, 249, 250); /* Sets a solid orange border */
-    box-shadow: 0 0 15px rgb(240, 144, 18); /* Creates a glowing effect */
-    min-height: 200px; /* Sets the minimum height of the box */
+    /* border: 1px solid rgb(247, 249, 250); */
+    min-height: 200px; 
     border-radius: 22px;
     padding: 20px;
     position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(30px);
 }
 
-.news_link{
+.news_link {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-decoration:dashed;
+    text-decoration: dashed;
     color: white;
 }
 
-.news_link:hover{
+.news_link:hover {
     color: rgb(240, 144, 18);
     text-decoration: underline;
 }
+
+
+/* Trying it with 3d boxes */
+
+
+/* .rss-box {
+    display: flex;
+    justify-content: center;
+    border: 1px solid rgb(247, 249, 250); 
+    min-height: 200px; 
+    border-radius: 22px;
+    padding: 20px;
+    position: relative;
+    background: linear-gradient(to right, #f2f2f2, #ffffff); 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); 
+    color: black; 
+}
+
+.news_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: dashed;
+    color: black; 
+}
+
+.news_link:hover {
+    color: rgb(240, 144, 18);
+    text-decoration: underline;
+} */
 
 .rss_title{
     display: flex;

@@ -2,22 +2,22 @@ $(document).ready(
     function() {
         var feeds = [
             { url: "https://hackernoon.com/feed", itemIndex: 0 },
-            { url: "https://hackernoon.com/feed", itemIndex: 1 },
-            { url: "https://hackernoon.com/feed", itemIndex: 2 },
-            { url: "https://hackernoon.com/feed", itemIndex: 3 },
-            { url: "https://hackernoon.com/feed", itemIndex: 4 },
-            { url: "https://hackernoon.com/feed", itemIndex: 5 },
-            { url: "https://hackernoon.com/feed", itemIndex: 6 },
-            { url: "https://hackernoon.com/feed", itemIndex: 7 },
-            { url: "https://hackernoon.com/feed", itemIndex: 8 },
-            { url: "https://hackernoon.com/feed", itemIndex: 9 },
-            { url: "https://hackernoon.com/feed", itemIndex: 10 },
-            { url: "https://hackernoon.com/feed", itemIndex: 11 },
+            { url: "https://news.ycombinator.com/rss", itemIndex: 0 },
+            { url: "https://rss.app/feeds/QFRefKscbOdMGwaR.xml", itemIndex: 1},
+            // { url: "https://hackernoon.com/feed", itemIndex: 3 },
+            // { url: "https://hackernoon.com/feed", itemIndex: 4 },
+            // { url: "https://hackernoon.com/feed", itemIndex: 5 },
+            // { url: "https://hackernoon.com/feed", itemIndex: 6 },
+            // { url: "https://hackernoon.com/feed", itemIndex: 7 },
+            // { url: "https://hackernoon.com/feed", itemIndex: 8 },
+            // { url: "https://hackernoon.com/feed", itemIndex: 9 },
+            // { url: "https://hackernoon.com/feed", itemIndex: 10 },
+            // { url: "https://hackernoon.com/feed", itemIndex: 11 },
         ];
 
         feeds.forEach(
             function(feed) {
-                $.get("api/readRSS.php", { feedurl: feed.url, itemIndex: feed.itemIndex })
+                $.get("api/readRSS.php", { feedurl: feed.url, itemIndex: feed.itemIndex, cache: new Date().getTime() })
                 .done(function(data) {
                     $("#content").append(data);
                 })
