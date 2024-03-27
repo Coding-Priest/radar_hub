@@ -1,0 +1,6 @@
+{
+    "files.associations": {
+        "php_ini.h": "c"
+    },
+    "cmake.sourceDirectory": "/opt/lampp/htdocs/radar_hub/fastText-0.9.1"
+}

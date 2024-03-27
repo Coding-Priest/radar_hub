@@ -42,10 +42,15 @@
 // }
 
 // * Twitter AI List
-$feedurl = "https://rss.app/feeds/QFRefKscbOdMGwaR.xml";
+// $feedurl = "https://rss.app/feeds/QFRefKscbOdMGwaR.xml";
+// $rss = simplexml_load_file($feedurl);
+// print_r($rss);
+// print_r($rss->channel->item[0]->title);
+// print_r($rss->channel->item[0]->link);
+
+
+// * Hugging Face research Papers
+$feedurl = "https://rss.app/feeds/1Y36svRsOf9Xbyc5.xml";
 $rss = simplexml_load_file($feedurl);
 print_r($rss);
-print_r($rss->channel->item[0]->title);
-print_r($rss->channel->item[0]->link);
-
 ?>
