@@ -3,7 +3,7 @@ $(document).ready(
         var feeds = [
             { url: "https://hackernoon.com/feed", itemIndex: 0 },
             { url: "https://news.ycombinator.com/rss", itemIndex: 1 },
-            { url: "https://rss.app/feeds/BakkMqZJBM6z4z7T.xml", itemIndex: 2}, //Twitter AI
+            // { url: "https://rss.app/feeds/BakkMqZJBM6z4z7T.xml", itemIndex: 2}, //Twitter AI
             { url: "https://rss.app/feeds/1Y36svRsOf9Xbyc5.xml", itemIndex: 3 }, //HuggingFace papers
             { url: "https://hackernoon.com/feed", itemIndex: 4 },
             { url: "https://hackernoon.com/feed", itemIndex: 5 },
@@ -13,6 +13,7 @@ $(document).ready(
             { url: "https://hackernoon.com/feed", itemIndex: 9 },
             { url: "https://hackernoon.com/feed", itemIndex: 10 },
             { url: "https://hackernoon.com/feed", itemIndex: 11 },
+            { url: "https://hackernoon.com/feed", itemIndex: 12 },            
         ];
 
         feeds.forEach(
