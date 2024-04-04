@@ -13,7 +13,9 @@ $(document).ready(
             { url: "https://hackernoon.com/feed", itemIndex: 9 },
             { url: "https://hackernoon.com/feed", itemIndex: 10 },  
             { url: "https://hackernoon.com/feed", itemIndex: 11 },
-            { url: "https://hackernoon.com/feed", itemIndex: 12 },            
+            { url: "https://hackernoon.com/feed", itemIndex: 12 },
+            { url: "https://hackernoon.com/feed", itemIndex: 13 },            
+
         ];
 
         feeds.forEach(

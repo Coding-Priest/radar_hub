@@ -97,14 +97,27 @@ body{
     box-shadow: 0 0 8px 2px rgba(240, 143, 8, 0.819); /* This creates a white glow */
 }
 
+.news_link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: dashed;
+    color: white;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    hyphens: auto;
+    min-width: 0;
+}
+
 #content {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    padding-top: 70px; 
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+    padding-top: 70px;
     gap: 40px 30px;
     padding-left: 30px;
     padding-right: 30px;
+    overflow-x: auto;
 }
 
 .rss-box {
@@ -117,14 +130,6 @@ body{
     position: relative;
     background: rgba(255, 255, 255, 0.05);
     backdrop-filter: blur(30px);
-}
-
-.news_link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: dashed;
-    color: white;
 }
 
 .news_link:hover {
