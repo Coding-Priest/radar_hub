@@ -13,26 +13,26 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Retrieve the website URLs from the Recommendation_Score table for the specified user
+// Retrieve the website URLs and titles from the Recommendation_Score table for the specified user
 $userId = 5; // Replace with the desired user ID
-$sql = "SELECT DISTINCT link FROM Recommendation_Score rs join Articles a on a.Article_ID = rs.Article_ID WHERE User_ID = $userId ORDER BY Rec_Score DESC LIMIT 20";
+$sql = "SELECT DISTINCT a.link, a.title FROM Recommendation_Score rs JOIN Articles a ON a.Article_ID = rs.Article_ID WHERE User_ID = $userId ORDER BY Rec_Score DESC LIMIT 20";
 $result = $conn->query($sql);
 
-// Store the website URLs in an array
-$websiteUrls = array();
+// Store the website URLs and titles in an array
+$websiteData = array();
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
-        $websiteUrls[] = $row["link"];
+        $websiteData[] = array(
+            'link' => $row["link"],
+            'title' => $row["title"]
+        );
     }
 }
 
 // Close the database connection
 $conn->close();
 
-//Printing the website URLs
-// print_r($websiteUrls);
-
-// Return the website URLs as JSON
+// Return the website data as JSON
 header('Content-Type: application/json');
-echo json_encode($websiteUrls);
+echo json_encode($websiteData);
 ?>
