@@ -58,7 +58,3 @@ Radar Hub is a content-based filtering system for news using RSS API. It provide
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
-
-## License
-
-This project is under the [insert license type] license. See the LICENSE file for more details.
